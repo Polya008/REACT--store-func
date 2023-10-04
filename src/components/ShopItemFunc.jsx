@@ -1,4 +1,5 @@
-export default class ShopItemFunc = () => {
+export default class ShopItemFunc = (props) => {
+    const { item } = props;
     return (
         <>
             <div class="main-content">
