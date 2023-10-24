@@ -1,4 +1,6 @@
-export default class ShopItemFunc = (props) => {
+import PropTypes from 'prop-types'
+
+function ShopItemFunc = (props) => {
     const { item } = props;
     return (
         <>
@@ -18,3 +20,7 @@ export default class ShopItemFunc = (props) => {
             )
         }
 
+ ShopItemFunc.propTypes = {
+      item: PropTypes.object
+    }
+      export default ShopItemFunc
